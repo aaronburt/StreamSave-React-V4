@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+body { margin: 0; background-color: #161a1d; font-family: 'Open Sans', sans-serif; font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+.player-container { background-color: #0b090a; }
+.player-wrapper { width: 1280px; margin: auto; }
+.aspect-ratio { padding-top: 56.25%; }
+
+.description-wrapper { width: 100%; background-color: #113537; }
+.description { margin: auto; width: 1280px; min-height: 50px; background-color: #113537; color: lightgray; }
+.description-title, .description-subtitle { padding-left: 10px; }
+.description-title {  font-size: xx-large; padding-top: 4px; }
+.description-subtitle {  font-size: large; padding-bottom: 10px; }
+
+
+@media only screen and (max-width: 1280px) and (min-width: 301px) {
+  .player-wrapper { width: 90% }
+  .description { width: 90%; }
+  .aspect-ratio { padding-top: 56.25%; }
+}
+
+@media only screen and (max-width: 300px) {
+  .description-title {  font-size: medium; }
+  .description-subtitle {  font-size: small; padding-bottom: 10px; }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #113537;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  transition: 1s;
+  background-color: #111;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-img {
+  width: 360px; 
+  height: 201px;
+  margin: auto;
+  background-size: cover;
+}
+
+.list-img-title {
+  text-overflow: ellipsis;
+}
