@@ -1,6 +1,5 @@
 import React from 'react';
 import NavigationBar from './partials/NavigationBar';
-import Latest from './partials/Latest';
 
 export default class Home extends React.Component {
 
@@ -8,7 +7,9 @@ export default class Home extends React.Component {
         return(
             <div>
                 <NavigationBar/>
-                <Latest/>
+                <h4 style={{color: 'lightgray', textAlign: 'center'}}>
+                    StreamSave is an <h2 style={{display: 'inline'}}>IN BETA</h2> Video Delivery Platform
+                </h4>
             </div>
         );
     }
