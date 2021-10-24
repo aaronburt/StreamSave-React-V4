@@ -1,12 +1,36 @@
+:root {
+  /* Colors */
+  --primary-color: #113537;
+  --background-color: #161a1d;
+  --navigation-color: #0A1E1F;
+  --player-color: #0b090a;
+  --text-colour: lightgray;
+
+  /* Sizes */
+  --watchable-item-width: 360px;
+  --watchable-item-height: 201px; 
+
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
 
-body { margin: 0; background-color: #161a1d; font-family: 'Open Sans', sans-serif; font-family: 'Zen Kaku Gothic Antique', sans-serif; }
-.player-container { background-color: #0b090a; }
+body { 
+  margin: 0; 
+  background-color: var(--background-color); 
+  /* Fallback and Actual font */
+  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Zen Kaku Gothic Antique', sans-serif; 
+  overflow-x: hidden;
+
+}
+
+.player-container { background-color: var(--player-color); }
 .player-wrapper { width: 1280px; margin: auto; }
 .aspect-ratio { padding-top: 56.25%; }
 
-.description-wrapper { width: 100%; background-color: #113537; }
-.description { margin: auto; width: 1280px; min-height: 50px; background-color: #113537; color: lightgray; }
+.description-wrapper { width: 100%; background-color: var(--primary-color); }
+.description { margin: auto; width: 1280px; min-height: 50px; background-color: var(--primary-color); color: var(--text-colour); }
 .description-title, .description-subtitle { padding-left: 10px; }
 .description-title {  font-size: xx-large; padding-top: 4px; }
 .description-subtitle {  font-size: large; padding-bottom: 10px; }
@@ -28,7 +52,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #113537;
+  background-color: var(--primary-color);
 }
 
 li {
@@ -44,25 +68,29 @@ a {
 }
 
 li a:hover {
-  transition: 1s;
-  background-color: #111;
+  transition: 0.1s;
+  background-color: var(--navigation-color);
 }
 
-.list-container {
+.item-container {
   display: flex;
   flex-wrap: wrap; 
   margin: auto;
-  align-items: center;
   justify-content: center;
 }
 
-.list-img {
-  width: 360px; 
-  height: 201px;
+.item-item {
+  width: var(--watchable-item-width); 
+  height: var(--watchable-item-height);
   margin: auto;
   background-size: cover;
+  background-color: var(--primary-color);
 }
 
-.list-img-title {
+.item-img-title {
+  line-height: 20px;
+  max-width: var(--watchable-item-width);
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow:hidden
 }
