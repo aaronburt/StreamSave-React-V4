@@ -1,0 +1,24 @@
+@import './Root.css';
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+    justify-content: center;
+}
+  
+.item-item {
+    width: var(--watchable-item-width); 
+    height: var(--watchable-item-height);
+    margin: auto;
+    background-size: cover;
+    background-color: var(--primary-color);
+}
+  
+.item-img-title {
+    line-height: 20px;
+    max-width: var(--watchable-item-width);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden
+}

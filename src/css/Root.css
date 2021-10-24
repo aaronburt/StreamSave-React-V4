@@ -1,0 +1,30 @@
+/* Font import from GoogleApis */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+:root {
+
+    /* Colors */
+    --primary-color: #113537;
+    --background-color: #161a1d;
+    --navigation-color: #0A1E1F;
+    --player-color: #0b090a;
+    --text-colour: lightgray;
+
+    /* Player */
+    --player-width: 1280px;
+
+    /* Latest - List */ 
+    --watchable-item-width: 360px;
+    --watchable-item-height: 201px; 
+
+    /* Description */ 
+    --description-padding-left: 10px;
+}
+
+body { 
+    margin: 0; 
+    background-color: var(--background-color); 
+    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Zen Kaku Gothic Antique', sans-serif; 
+    overflow-x: hidden;
+}

@@ -1,0 +1,11 @@
+@import './Root.css';
+
+.player-container { background-color: var(--player-color); }
+.player-wrapper { width: var(--player-width); margin: auto; }
+.aspect-ratio { padding-top: 56.25%; }
+
+
+@media only screen and (max-width: 1280px) {
+    .player-wrapper { width: 90% }
+    .aspect-ratio { padding-top: 56.25%; }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from './partials/NavigationBar';
-import List from './partials/List';
+import Latest from './partials/Latest';
 
 export default class Home extends React.Component {
 
@@ -8,7 +8,7 @@ export default class Home extends React.Component {
         return(
             <div>
                 <NavigationBar/>
-                <List/>
+                <Latest/>
             </div>
         );
     }

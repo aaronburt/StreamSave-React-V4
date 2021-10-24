@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Player.css'
 
 export default class Player extends React.Component {
 

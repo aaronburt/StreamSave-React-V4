@@ -1,6 +1,8 @@
 import React from 'react';
+import '../css/Latest.css';
 
-export default class List extends React.Component {
+
+export default class Latest extends React.Component {
 
     constructor(){
         super();
@@ -35,8 +37,8 @@ export default class List extends React.Component {
                 if(value.availableResolutions !== null){
                     rsp.push(
                 
-                        <div key={BackgroundImage} title={value.title}>
-                            <a href={'/v/' + value.guid} value="es">
+                        <div key={key} title={value.title}>
+                            <a href={'/v/' + value.guid} value={key}>
                                 <div preview={PreviewImage} url={BackgroundImage} className="item-item" style={{ backgroundImage: `url(${BackgroundImage})`}} onMouseLeave={this.mouseLeave} onMouseOver={this.mouseOver}></div>
                                 <div className="item-img-title">{value.title}</div>
                             </a>
