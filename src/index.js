@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
-import Video from './video';
-import Home from './home';
+import Video from './Video';
+import Home from './Home';
 
 ReactDOM.render(
   <React.StrictMode>
