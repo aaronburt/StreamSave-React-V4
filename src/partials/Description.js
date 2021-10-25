@@ -25,7 +25,7 @@ class Description extends React.Component {
 
     render(){
         if(this.state.success){
-            const { vTitle, vViews, vTime, vId } = this.state.video;
+            const { vTitle, vViews, vTime } = this.state.video;
 
             document.title = vTitle + ' - StreamSave'
 
@@ -35,9 +35,6 @@ class Description extends React.Component {
                     <div className="description">
                         <div className="description-title">{vTitle}</div>
                         <div className="description-subtitle">{vViews} views - {vTime}</div>
-                        <div className="description-subtitle">
-                            <a href={"/report/" + vId }><i class="fas fa-flag"></i></a>
-                        </div>
                     </div>
                 </div>
             );
