@@ -38,7 +38,7 @@ export default class Latest extends React.Component {
                     rsp.push(
                 
                         <div key={key} title={value.title}>
-                            <a href={'/v/' + value.guid} value={key}>
+                            <a href={'/v/' + value.guid} value={key} className="linky">
                                 <div preview={PreviewImage} url={BackgroundImage} className="item-item" style={{ backgroundImage: `url(${BackgroundImage})`}} onMouseLeave={this.mouseLeave} onMouseOver={this.mouseOver}></div>
                                 <div className="item-img-title">{value.title}</div>
                             </a>

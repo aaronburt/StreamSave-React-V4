@@ -1,6 +1,6 @@
 /* Font import from GoogleApis */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 :root {
 
     /* Colors */
@@ -11,7 +11,7 @@
     --text-colour: lightgray;
 
     /* Player */
-    --player-width: 1280px;
+    --player-width: 1000px;
 
     /* Latest - List */ 
     --watchable-item-width: 360px;
