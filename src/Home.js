@@ -7,9 +7,8 @@ export default class Home extends React.Component {
         return(
             <div style={{color: 'lightgray', textAlign: 'center'}}>
                 <NavigationBar/>
-                <h4 >StreamSave is an
-                </h4><h2 style={{display: 'inline'}}>IN BETA</h2><h4>  Video Delivery Platform
-</h4>
+                <h4>StreamSave is an
+                </h4><h2 style={{display: 'inline'}}>IN BETA</h2><h4>  Video Delivery Platform</h4>
             </div>
         );
     }
